@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Pencil</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="bptitle">BLACKPENCIL.SHOP</div>
+    <div class="orderfield">
+        <div class="ib">Order</div>
+        <div class="ib sum" id="sum">5 RUB</div>
+        <div>Amount Of Pencils:</div>
+        <input type="button" value="<" id="decpencils" class="button">
+        <div id="amountofpencils" class="ib">1</div>
+        <input type="button" value=">" id="incpencils" class="button">
+        <div>Address:</div>
+        <input type="text">
+        <input type="button" value="Order" id="order" class="button">
+        <div id="oos">ERROR: Out Of Stock</div>
+    </div>
+
+
+<!-- Всплывающее окно -->
+<div id="popup">
+  <div id="close-btn" onclick="closePopup()">X</div>
+  <p>By Pressing "Proceed", You Accept <a href="terms.html">Terms of Use of BlackPencil.shop</a></p>
+  <button id="proceed" onclick="realorder(); closePopup(); isaccepted = true">Proceed</button>
+</div>
+
+
+</body>
+</html>

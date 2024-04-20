@@ -1,0 +1,134 @@
+body {
+    background-image: url("images/pencils.png");
+    background-repeat: no-repeat;
+    background-size: cover ; /* или contain, в зависимости от ваших предпочтений */
+    background-position: center;
+    background-color: rgb(51, 51, 51);
+    background-attachment: fixed;
+    color: white;
+
+}
+.orderfield {
+    margin:auto;
+    width:fit-content;
+    font-family: 'georgia';
+    border: 3px solid rgb(109, 110, 109);
+    padding: 10px;
+}
+.bptitle {
+    margin:auto;
+    width:fit-content;
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+    padding: 10px;
+}
+.button {
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.ib {
+    display: inline-block;
+}
+
+.sum { 
+    float:right;
+}
+#popup {
+    display: none;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 10px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Стили для кнопки закрытия */
+  #close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+.show-popup {
+    padding: 18px 40px;
+    background: #6e78ff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: 500;
+  }
+  .popup-container {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .4s ease;
+  }
+  .popup-container .popup-box {
+    width: 500px;
+    background: #f2f2f2;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 30px;
+    transform: scale(0);
+  }
+  .popup-container.active .popup-box {
+    transform: scale(1);
+    transition: .4s ease;
+    transition-delay: .25s;
+  }
+  .popup-box h1 {
+    color: #333;
+    line-height: 1;
+  }
+  .popup-box p {
+    color: #333;
+    margin: 12px 0 20px;
+  }
+  .popup-box .close-btn {
+    width: 100%;
+    height: 45px;
+    background: #6e78ff;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: 500;
+  }
