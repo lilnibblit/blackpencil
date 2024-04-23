@@ -32,7 +32,11 @@ window.addEventListener('load', (event) => {
 
 function realorder()
 {
-    window.open(`https://oplata.qiwi.com/create?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPtpmQHPFMpV52JqRU5S65HvaPekUTSUTgxJUxgsSukcKQYaPD9GMAVhXiPYDDcjm522XHGqjYLdAPk7JjZT8ur2e2Cu9rFqP5HHnjm6qsR&amount=${sum}&successUrl=&failUrl=&comment=&extras%5BwidgetAlias%5D=andrei-euu4_ex9uu&extras%5BwidgetReferrer%5D=&extras%5BthemeCode%5D=Andrei-EuU4_Ex9uu`)
+    document.getElementById("paySum").value = sum;
+
+    document.getElementById("payForm").submit();
+    
+    // window.open(`https://oplata.qiwi.com/create?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPtpmQHPFMpV52JqRU5S65HvaPekUTSUTgxJUxgsSukcKQYaPD9GMAVhXiPYDDcjm522XHGqjYLdAPk7JjZT8ur2e2Cu9rFqP5HHnjm6qsR&amount=${sum}&successUrl=&failUrl=&comment=&extras%5BwidgetAlias%5D=andrei-euu4_ex9uu&extras%5BwidgetReferrer%5D=&extras%5BthemeCode%5D=Andrei-EuU4_Ex9uu`)
 }
 
 function openPopup() {
